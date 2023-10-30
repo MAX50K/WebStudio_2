@@ -1,0 +1,15 @@
+:root{
+    --nav-color-blue:#2196F3;
+    --nav-color-black:black;
+    --h1-text: #fff;
+}
+
+.nav_blue{
+    color: var(--nav-color-blue);
+}
+.nav_black{
+    color: var(--nav-color-black);
+}
+.h1{
+    color: var(--h1-text);
+}
