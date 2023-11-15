@@ -8,6 +8,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* header */
 
 .header {
@@ -30,65 +34,85 @@ body {
 }
 .header__nav__link {
   color: var(--title-color);
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 .header__contact__list {
 }
-.header__contact__link2 {
+
+
+.header__contact__link {
   color: var(--text-color);
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.header__contact__link1 {
-  color: var(--link-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
+/* hero */
 
 .hero {
 }
 .hero__title {
   color: var(--title-color);
   text-align: center;
-  font-family: "Roboto";
   font-size: 44px;
   font-weight: 900;
-  line-height: 60px; /* 136.364% */
+  line-height: 136.364%;
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
 .hero__button {
   color: var(--title-color);
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 187.5%;
   letter-spacing: 0.96px;
 }
 
-.works {
+/* information */
+.information {
 }
-.works__list {
+.information__list {
 }
-.works__item {
+.information__item {
 }
-.works__title {
+.information__title {
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
-.works__text {
+.information__text {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
 }
 .team {
 }
 .team__subtitle {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
 }
+
+.team__item {
+}
+.team__text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
 .footer {
 }
 .footer__text--colored {
@@ -100,20 +124,37 @@ body {
 }
 .footer__adress {
   color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
 }
 .footer__link {
   color: var(--text-color);
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.42px;
 }
 
 .footer__title {
-  color: #212121;
+  color: var(--title-color);
   text-align: center;
-  font-family: "Roboto";
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1.08px;
+}
+
+.works {
+}
+.works__subtitle {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+.works__list {
+}
+.works__item {
 }
