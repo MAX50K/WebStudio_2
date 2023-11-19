@@ -184,6 +184,10 @@ li {
 .project-buttons {
 }
 .project-buttons__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
 .project-buttons__item {
 }
@@ -194,6 +198,9 @@ li {
   font-weight: 500;
   line-height: 162.5%;
   letter-spacing: 0.48px;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
 }
 .projects {
 }
