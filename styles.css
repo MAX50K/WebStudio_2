@@ -41,7 +41,6 @@ li {
 .header__contact__list {
 }
 
-
 .header__contact__link {
   color: var(--text-color);
   font-size: 14px;
@@ -52,9 +51,11 @@ li {
 /* hero */
 
 .hero {
+  font-weight: 400;
+  background: #2f303a;
 }
 .hero__title {
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -69,6 +70,9 @@ li {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* information */
@@ -104,6 +108,12 @@ li {
 
 .team__item {
 }
+.team__name {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
 .team__text {
   color: var(--text-color);
   font-size: 16px;
@@ -114,6 +124,8 @@ li {
 }
 
 .footer {
+  font-weight: 600;
+  background: #2f303a;
 }
 .footer__text--colored {
   color: var(--link-color);
@@ -155,6 +167,55 @@ li {
   letter-spacing: 1.08px;
 }
 .works__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
 .works__item {
+}
+.works__img {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+/* portfolio */
+
+.project-buttons {
+}
+.project-buttons__list {
+}
+.project-buttons__item {
+}
+.project-buttons__button {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 162.5%;
+  letter-spacing: 0.48px;
+}
+.projects {
+}
+.projects-list {
+}
+.projects-item {
+}
+.projects-img {
+}
+
+
+.projects-title {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 1.08px;
+}
+.projects-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 187.5%;
+  letter-spacing: 0.48px;
 }
