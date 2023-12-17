@@ -1,5 +1,5 @@
 *,
-/* *::after,
+*::after,
 *::before {
     margin: 0;
     padding: 0;
@@ -21,11 +21,11 @@ p:last-child {
     margin-bottom: 0;
   }
 
-  /* ul {
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  } */
+  }
 
   a {
     color: currentColor;
@@ -40,10 +40,4 @@ p:last-child {
     display: block;
     max-width: 100%;
     height: auto;
-  } */
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
   }
