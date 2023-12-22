@@ -8,13 +8,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   outline: 2px solid red;
 }
-
 
 /* header */
 
@@ -22,7 +21,7 @@ body {
   padding: 25px 0;
 }
 
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -46,7 +45,6 @@ body {
   gap: 50px;
 }
 .header__nav__item {
-
 }
 .header__nav__link {
   color: var(--title-color);
@@ -69,13 +67,15 @@ body {
 /* hero */
 
 .hero {
+  display: flex;
   font-weight: 400px;
   height: 600px;
+  align-items: center;
   background: #2f303a;
+  text-align: center;
 }
 
 .hero__title {
-  align-items: center;
   color: #fff;
   font-size: 44px;
   font-weight: 900;
@@ -85,7 +85,7 @@ body {
 }
 
 .hero__button {
-  color: var(--title-color);
+  color: white;
   font-size: 16px;
   font-weight: 700;
   line-height: 187.5%;
@@ -95,7 +95,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.hero__button:hover{
+.hero__button:hover {
   color: var(--title-color);
   font-size: 16px;
   font-weight: 700;
@@ -133,7 +133,7 @@ body {
 }
 .team {
   font-weight: 400;
-  background: #F5F4FA;
+  background: #f5f4fa;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -147,6 +147,10 @@ body {
 }
 
 .team__item {
+  border-radius: 0px 0px 4px 4px;
+  background-color:white ;
+  height: 368px;
+  margin-bottom: 94px;
 }
 .team__name {
   color: var(--title-color);
@@ -154,14 +158,15 @@ body {
   font-weight: 500;
   letter-spacing: 0.48px;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .team__text {
-  color: var(--text-color);
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.48px;
-  margin-bottom: 202px;
   text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  letter-spacing: 0.48px;
 }
 
 .team__img {
@@ -184,7 +189,7 @@ body {
   font-weight: 600;
   background: #2f303a;
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 .footer__text--colored {
   color: white;
@@ -209,6 +214,7 @@ body {
 
 .footer__title {
   color: var(--link-color);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1.08px;
@@ -218,10 +224,11 @@ body {
 }
 .works__subtitle {
   color: var(--title-color);
-  justify-content: center;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 .works__list {
   display: flex;
@@ -234,7 +241,7 @@ body {
   display: flex;
   justify-content: center;
   margin-right: 30px;
-  margin-bottom: 280px;
+  margin-bottom: 103px;
 }
 /* portfolio */
 
