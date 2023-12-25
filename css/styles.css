@@ -12,7 +12,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* header */
@@ -75,6 +75,7 @@ body {
   text-align: center;
 }
 
+
 .hero__title {
   color: #fff;
   font-size: 44px;
@@ -82,6 +83,7 @@ body {
   line-height: 136.364%;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .hero__button {
@@ -90,19 +92,14 @@ body {
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
+  padding: 10px 32px;
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero__button:hover {
-  color: var(--title-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
+  background: #002b4e;
 }
 
 /* information */
@@ -111,7 +108,6 @@ body {
 .information__list {
   display: flex;
   justify-content: center;
-  font-size: 30px;
 }
 .information__item {
 }
@@ -122,6 +118,8 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-right: 30px;
+  margin-bottom: 9px;
+  margin-top: 94px;
 }
 .information__text {
   color: var(--text-color);
@@ -190,7 +188,16 @@ body {
   background: #2f303a;
   display: flex;
   flex-wrap: wrap;
+  gap: 9px;
 }
+
+
+.footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .footer__text--colored {
   color: white;
   font-family: "Raleway";
@@ -228,7 +235,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  margin-top: 109px;
 }
 .works__list {
   display: flex;
@@ -242,6 +249,7 @@ body {
   justify-content: center;
   margin-right: 30px;
   margin-bottom: 103px;
+  margin-top: 109px;
 }
 /* portfolio */
 
