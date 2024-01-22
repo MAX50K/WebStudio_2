@@ -133,12 +133,12 @@ body {
   background-position: center;
 }
 .information__item:nth-child(3):before {
-  background-imageS: url("../images/diagram-1.jpg");
+  background-image: url("../images/diagram-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .information__item:nth-child(4):before {
-  background-imageS: url("../images/astronaut-1.jpg");
+  background-image: url("../images/astronaut-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
