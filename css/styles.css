@@ -71,9 +71,7 @@ body {
   font-weight: 400px;
   height: 600px;
   align-items: center;
-  background-image: url("../images/img-overlay.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: rgba(47, 48, 58, 0.40),url("../images/Img.png") no-repeat center;
   text-align: center;
 }
 
