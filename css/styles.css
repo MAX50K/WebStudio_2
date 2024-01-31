@@ -71,7 +71,7 @@ body {
   font-weight: 400px;
   height: 600px;
   align-items: center;
-  background: rgba(47, 48, 58, 0.40),url("../images/Img.png") no-repeat center;
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/Img.png");
   text-align: center;
 }
 
