@@ -71,7 +71,12 @@ body {
   font-weight: 400px;
   height: 600px;
   align-items: center;
-  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/Img.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.jpg");
   text-align: center;
 }
 
@@ -119,7 +124,6 @@ body {
   background: #f5f4fa;
   width: 270px;
   height: 120px;
-  
 }
 
 .information__item:nth-child(1):before {
@@ -146,7 +150,6 @@ body {
   background-position: center;
   margin-bottom: 30px;
 }
-
 
 .information__title {
   color: var(--title-color);
@@ -214,6 +217,9 @@ body {
 .team__item {
   border-radius: 0px 0px 4px 4px;
   background-color: white;
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .team__name {
   color: var(--title-color);
@@ -289,6 +295,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   gap: 8px;
 }
 
@@ -329,6 +336,7 @@ body {
   font-weight: 700;
   line-height: 200%;
   letter-spacing: 1.08px;
+  margin-top: 6px;
 }
 .projects-text {
   color: var(--text-color);
