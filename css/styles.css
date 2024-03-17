@@ -129,25 +129,25 @@ body {
 }
 
 .information__item:nth-child(1):before {
-  background-image: url("../images/antenna-1.jpg");
+  background-image: url("../images/icons/antena.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
 }
 .information__item:nth-child(2):before {
-  background-image: url("../images/clock-1.jpg");
+  background-image: url("../images/icons/clock.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
 }
 .information__item:nth-child(3):before {
-  background-image: url("../images/diagram-1.jpg");
+  background-image: url("../images/icons/diagram.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
 }
 .information__item:nth-child(4):before {
-  background-image: url("../images/astronaut-1.jpg");
+  background-image: url("../images/icons/astronaut.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
