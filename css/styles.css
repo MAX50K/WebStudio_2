@@ -240,6 +240,20 @@ body {
   letter-spacing: 0.48px;
 }
 
+.team__svglist {
+  display: flex;
+  gap: 34px;
+  margin-right: 44px;
+  margin-left: 44px;
+  margin-bottom: 42px;
+}
+
+.team__svg{
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
 .team__img {
 }
 
