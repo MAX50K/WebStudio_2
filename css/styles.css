@@ -249,9 +249,19 @@ body {
 }
 
 .team__svg{
+  display: flex;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
+}
+
+.team__svg:hover{
+  fill: white;
+  background-image: url(../images/Ellipse.jpg);
+  background-size: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  bac
 }
 
 .team__img {
