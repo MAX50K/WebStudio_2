@@ -266,16 +266,17 @@ body {
   margin-bottom: 42px;
 }
 
-.team__svg{
+.team__svg {
   display: flex;
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
+  border-radius: 50%;
 }
 
-.team__svg:hover{
+.team__svg:hover {
   fill: white;
-  background-image: url(../images/Ellipse.jpg);
+  background-color: #2196f3;
   background-size: 44px;
   background-repeat: no-repeat;
   background-position: center;
@@ -328,6 +329,17 @@ body {
   font-weight: 700;
   letter-spacing: 1.08px;
   padding-bottom: 20px;
+}
+
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  
 }
 
 /* portfolio */
