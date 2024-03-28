@@ -260,26 +260,33 @@ body {
 
 .team__svglist {
   display: flex;
-  gap: 34px;
+  gap: 10px;
   margin-right: 44px;
   margin-left: 44px;
   margin-bottom: 42px;
 }
 
-.team__svg {
+.team__svglink {
   display: flex;
-  width: 20px;
-  height: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
   border-radius: 50%;
 }
 
-.team__svg:hover {
+
+.team__svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team__svg:hover,
+.team__svg:focus {
   fill: white;
   background-color: #2196f3;
-  background-size: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .team__img {
