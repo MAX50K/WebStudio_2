@@ -292,6 +292,31 @@ body {
 .team__img {
 }
 
+.clients {
+}
+
+.clients__text {
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172px;
+  height: 92px;
+  fill: #AFB1B8;
+}
+
+.clients__svg {
+  width: 60px;
+  height: 60px;
+}
+
 /* footer */
 
 .footer {
