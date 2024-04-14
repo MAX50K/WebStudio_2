@@ -309,7 +309,6 @@ body {
   letter-spacing: 3%;
   text-align: center;
   margin-top: 92px;
-  
 }
 
 .clients__list {
@@ -339,8 +338,13 @@ body {
   fill: #afb1b8;
 }
 
+.clients__link:hover,
+.clients__link:focus {
+  outline: 1px solid #2196f3;
+}
+
 .clients__link:hover .clients__svg,
-.clients__link:focus .clients__svg{
+.clients__link:focus .clients__svg {
   fill: #2196f3;
 }
 
@@ -379,6 +383,7 @@ body {
   line-height: 16px;
   letter-spacing: 2%;
   text-align: left;
+  margin-bottom: 9px;
 }
 
 .footer__title {
@@ -392,11 +397,11 @@ body {
 
 .footer__text {
   color: rgb(255, 255, 255);
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 3%;
+  letter-spacing: 6%;
+  margin-left: 301px;
   text-transform: uppercase;
 }
 
