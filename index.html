@@ -55,7 +55,27 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Effective solutions for your business</h1>
-                <button class="hero__button" type="button">Order a service</button>
+                <button class="hero__button" type="button" data-modal-open>Order a service</button>
+                <div class="background__is__hidden" data-modal>
+                    <div class="modal">
+                    <button class="btn" data-modal-close>
+                        <svg class="close__icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-X"></use>
+                        </svg>
+                    </button>
+                    <form>
+                        <input type="text">
+                    </form>
+                    <form>
+                        <input type="text">
+                    </form>
+                    <form>
+                        <input type="text">
+                    </form>
+                    <p>.....</p>
+                </div>
+                </div>
+                <script src="model.js"></script>
             </div>
         </section>
 
@@ -300,11 +320,18 @@
 
     <footer class="footer">
         <div class="container">
-            <a class="footer__title" href="#">Web<span class="footer__text--colored">Studio</span></a>
-            <a class="footer__adress" href="#">Kyiv, 26 Lesi Ukrainky Ave</a>
-            <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer__link" href="tel:++380961111111">+38 096 111 11 11</a>
-            <p class="footer__text">Приєднуйтесь</p>
+            <div class="footer__info">
+                <a class="footer__title" href="#">Web<span class="footer__text--colored">Studio</span></a>
+                <a class="footer__adress" href="#">Kyiv, 26 Lesi Ukrainky Ave</a>
+                <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer__link" href="tel:++380961111111">+38 096 111 11 11</a>
+            </div>
+            <div class="footer__buttons">
+                <h3 class="footer__title">Приєднуйтесь</h3>
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__title">Підпишіться на розсилку</h3>
+            </div>
         </div>
     </footer>
 
