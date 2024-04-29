@@ -56,25 +56,31 @@
             <div class="container">
                 <h1 class="hero__title">Effective solutions for your business</h1>
                 <button class="hero__button" type="button" data-modal-open>Order a service</button>
-                <!-- <div class="background__is__hidden" data-modal>
-                    <div class="modal">
-                        <button class="btn" data-modal-close>
-                            <svg class="close__icon">
-                                <use href="./images/icons/symbol-defs.svg#icon-X"></use>
-                            </svg>
-                        </button>
-                        <form>
-                            <input type="text">
-                        </form>
-                        <form>
-                            <input type="text">
-                        </form>
-                        <form>
-                            <input type="text">
-                        </form>
-                        <p>.....</p>
-                    </div>
-                </div> -->
+                <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="btn" data-modal-close>
+                        <svg class="close__icon">
+                            <use href="./icons/symbol-defs.svg#icon-X"></use>
+                        </svg>
+                    </button>
+                    <h1 class="modal__title">Reach out to us!</h1>
+                    <form class="form__list">
+                        <label class="form__button" for="">
+                            <p>Your name</p>
+                            <input class="input" pattern="" type="name">
+                        </label>
+                        <label class="form__button" for="">
+                            <p>Your email</p>
+                            <input class="input" type="email">
+                        </label>
+                        <label class="form__button" for="">
+                            <textarea name="message" placeholder="Leave a message" cols="30" rows="5"></textarea>
+                        </label>
+                    </form>
+                    <button></button>
+                    <p>.....</p>
+                </div>
+            </div>
                 <script src="model.js"></script>
             </div>
         </section>
