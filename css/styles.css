@@ -97,6 +97,9 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/Img.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -159,7 +162,6 @@ body {
   left: 50%;
   min-width: 400px;
   min-height: 300px;
-  padding: 15px;
   background-color: white;
   transform: translate(-50%, -50%);
 }
@@ -170,16 +172,16 @@ body {
   margin: 10px;
 }
 
-.btn {
-    fill: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: #fff;
+.btn-close-modal {
+  fill: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .btn:hover,
@@ -191,16 +193,23 @@ body {
 .modal__title {
 }
 
-.form__list {
+.form__label {}
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 28px;
   padding-top: 12px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.20);
   margin-top: 4px;
   padding-left: 42px;
+}
+
+.icon__vector{
+  height: 18px;
+  width: 18px; 
+
 }
 
 .form__text{
@@ -209,6 +218,10 @@ body {
   align-items: start;
 }
 
+.form__button:hover, 
+.form__button:focus {
+  color: #2196f3;
+}
 
 .input{
   width: 100%;
@@ -473,9 +486,10 @@ body {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer .container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__info {
@@ -483,12 +497,9 @@ body {
   flex-direction: column;
 }
 
-.footer__buttons{
-  display: flex;
-  flex-direction: column;
-}
 
-.footer__text--colored {
+
+.footer__logo--colored {
   color: white;
   font-family: "Raleway";
   font-size: 26px;
@@ -513,7 +524,7 @@ body {
   margin-bottom: 9px;
 }
 
-.footer__title {
+.footer__logo {
   color: var(--link-color);
   font-family: "Raleway";
   font-size: 26px;
@@ -522,28 +533,20 @@ body {
   padding-bottom: 20px;
 }
 
-.footer__text {
+.footer__title {
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 6%;
   text-transform: uppercase;
-}
-
-.footer__text:nth-child(1){
-  position: relative;
-  bottom: 104px;
-  left: 301px;
   margin-bottom: 20px;
 }
+
 
 .footer__svg__list {
   display: flex;
   gap: 10px;
-  position: relative;
-  bottom: 104px;
-  left: 301px;
 }
 
 .footer__svg__item {
