@@ -55,55 +55,9 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Effective solutions for your business</h1>
-                <button class="hero__button" type="button" data-modal-open>Order a service</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <button class="btn-close-modal" data-modal-close>
-                            <svg class="close__icon">
-                                <use href="./icons/symbol-defs.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                        <h1 class="modal__title">Reach out to us!</h1>
-                        <form class="form">
-                            <label class="form__label" for="">
-                                <span class="form__text">Your name</span>
-                                <div class="label__thumb">
-                                    <input class="input" pattern="" type="name">
-                                    <svg class="icon__svg">
-                                        <use href="./images/icons/symbol-defs.svg#icon-person"></use>
-                                    </svg>
-                                </div>
+                <button class="hero__button" data-modal-open type="button">Order a service</button>
 
-                            </label>
-                            <label class="form__label" for="">
-                                <span class="form__text">Your phone</span>
-                                <div class="label__thumb">
-                                    <input class="input" pattern="" type="name">
-                                    <svg class="icon__vector">
 
-                                    </svg>
-                                </div>
-
-                            </label>
-                            <label class="form__label" for="">
-                                <span class="form__text">Your E-mail</span>
-                                <div class="label__thumb">
-                                    <input class="input" pattern="" type="name">
-                                    <svg class="icon__vector">
-
-                                    </svg>
-                                </div>
-
-                            </label>
-                            <label class="form__button" for="">
-                                <textarea name="message" placeholder="Leave a message" cols="" rows="8"></textarea>
-                            </label>
-        
-                        <button></button>
-                        </form>
-                    </div>
-                </div>
-                <script src="model.js"></script>
             </div>
         </section>
 
@@ -396,7 +350,63 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close__button" data-modal-close>
+                <svg class="close__button__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form">
+                <div>
+                    <label class="form__label" for="name">Ім'я</label>
+                    <div class="modal__imput__thumb">
+                        <input class="form__input" type="text" id="name" placeholder="" required>
+                        <svg class="form__input-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
 
+                <div>
+                    <label class="form__label" for="tel">Телефон</label>
+                    <div class="modal__input__thumb">
+                        <input class="form__input" type="tel" id="tel" pattern="^[ 0-9]+$" placeholder=""
+                            required>
+                        <svg class="form__input-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="form__label" for="email">Пошта</label>
+                    <div class="modal__imput__thumb">
+                        <input class="form__input" type="email" id="email" placeholder="" required>
+                        <svg class="form__input-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <label class="form__label-comment" for="textarea">Коментар</label>
+                    <textarea class="form__input-comment" name="textarea" id="textarea" rows="8"
+                        placeholder="Введіть текст"></textarea>
+                </div>
+
+                <div class="form__confirm">
+                    <input class="form__input-confirm" type="checkbox" id="terms" name="terms" required>
+                    <p class="form__label-confirm">Погоджуюся з розсилкою та приймаю
+                        <a class="form__label-confirm__link" href="#">Умови договору</a></p>
+                </div>
+
+                <button class="hero__form__button" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
