@@ -362,7 +362,7 @@
                 <div>
                     <label class="form__label" for="name">Ім'я</label>
                     <div class="modal__imput__thumb">
-                        <input class="form__input" type="text" id="name" placeholder="" required>
+                        <input class="form__input" type="text" id="name" pattern="^[ 0-9]+$" placeholder="" required>
                         <svg class="form__input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-person"></use>
                         </svg>
@@ -372,8 +372,7 @@
                 <div>
                     <label class="form__label" for="tel">Телефон</label>
                     <div class="modal__input__thumb">
-                        <input class="form__input" type="tel" id="tel" pattern="^[ 0-9]+$" placeholder=""
-                            required>
+                        <input class="form__input" type="tel" id="tel" pattern="^[ 0-9]+$" placeholder="" required>
                         <svg class="form__input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -399,7 +398,8 @@
                 <div class="form__confirm">
                     <input class="form__input-confirm" type="checkbox" id="terms" name="terms" required>
                     <p class="form__label-confirm">Погоджуюся з розсилкою та приймаю
-                        <a class="form__label-confirm__link" href="#">Умови договору</a></p>
+                        <a class="form__label-confirm__link" href="#">Умови договору</a>
+                    </p>
                 </div>
 
                 <button class="hero__form__button" type="submit">Відправити</button>
