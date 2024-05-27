@@ -45,6 +45,7 @@ body {
   gap: 30px;
 }
 .header__nav__item {
+  padding-top: 20px;
 }
 .header__nav__link {
   color: var(--title-color);
@@ -349,7 +350,8 @@ body {
   margin-bottom: 30px;
 }
 
-.hero__form__button {
+
+.form__button {
   width: 200px;
   height: 50px;
   border-radius: 4px;
