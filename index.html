@@ -55,7 +55,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Effective solutions for your business</h1>
+                <h1 class="hero__title animate__animated animate__bounceIn animate__delay-0.8s">Effective solutions for your business</h1>
                 <button class="hero__button" data-modal-open type="button">Order a service</button>
 
 
@@ -351,6 +351,8 @@
             </div>
         </div>
     </footer>
+    
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close__button" data-modal-close>
@@ -362,8 +364,8 @@
             <form class="form">
                 <div>
                     <label class="form__label" for="name">Ім'я</label>
-                    <div class="modal__imput__thumb">
-                        <input class="form__input" type="text" id="name" pattern="^[ 0-9]+$" placeholder="" required>
+                    <div class="modal__input__thumb">
+                        <input class="form__input" type="text" id="name" pattern="[A-Za-zА-Яа-яЁё]" required>
                         <svg class="form__input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-person"></use>
                         </svg>
@@ -373,7 +375,7 @@
                 <div>
                     <label class="form__label" for="tel">Телефон</label>
                     <div class="modal__input__thumb">
-                        <input class="form__input" type="tel" id="tel" pattern="^[ 0-9]+$" placeholder="" required>
+                        <input class="form__input" type="tel" id="tel" pattern="^[ 0-9]+$" required>
                         <svg class="form__input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -382,8 +384,8 @@
 
                 <div>
                     <label class="form__label" for="email">Пошта</label>
-                    <div class="modal__imput__thumb">
-                        <input class="form__input" type="email" id="email" placeholder="" required>
+                    <div class="modal__input__thumb">
+                        <input class="form__input" type="email" id="email" required>
                         <svg class="form__input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-email"></use>
                         </svg>

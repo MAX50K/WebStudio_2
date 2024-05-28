@@ -72,11 +72,10 @@ body {
   transition: transform var(--animation), transform-origin var(--animation);
 }
 
-.header__nav__link:hover::after{
+.header__nav__link:hover::after {
   transform: scale(1);
   transform-origin: center right;
 }
-
 
 .header__contact__list {
   display: flex;
@@ -232,17 +231,16 @@ body {
 }
 
 .form__label {
-  text-align: left;
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
+  margin-bottom: 4px;
 }
 
 .modal__input__thumb {
   position: relative;
-  margin-top: 4px;
 }
 
 .form__input {
@@ -250,7 +248,6 @@ body {
   padding: 12px 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left: 42px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -258,6 +255,7 @@ body {
 .form__input:hover,
 .form__input:focus {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .form__input:focus + .form__input-icon {
@@ -265,17 +263,13 @@ body {
 }
 
 .form__input-icon {
-  width: 18px;
-  height: 18px;
   position: absolute;
-  fill: black;
   left: 12px;
   top: 50%;
+  width: 18px;
+  height: 18px;
+  /* fill: black; */
   transform: translateY(-50%);
-}
-
-.form__input-icon:hover,
-.form__input-icon:focus {
 }
 
 .comment {
@@ -349,7 +343,6 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-
 
 .form__button {
   width: 200px;
