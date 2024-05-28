@@ -18,7 +18,7 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header animate__animated animate__bounceInDown animate__delay-0.5s">
         <div class="container">
             <a class="header__logo" href="./index.html"><span class="header__logo--colored">Web</span>Studio</a>
             <nav class="header__nav">
@@ -30,8 +30,16 @@
                 </ul>
             </nav>
             <ul class="header__contact__list">
-                <li><a class="header__contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="header__contact__link" href="tel:++380961111111">+38 096 111 11 11</a></li>
+                <li><a class="header__contact__link" href="mailto:info@devstudio.com">
+                        <svg class="header__contact__icon" width="16" height="12">
+                            <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li><a class="header__contact__link" href="tel:+380961111111">
+                        <svg class="header__contact__icon" width="10" height="16">
+                            <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -114,10 +122,52 @@
     <!-- footers -->
     <footer class="footer">
         <div class="container">
-            <a class="footer__title" href="#">Web<span class="footer__text--colored">Studio</span></a>
-            <a class="footer__adress" href="#">Kyiv, 26 Lesi Ukrainky Ave</a>
-            <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer__link" href="tel:++380961111111">+38 096 111 11 11</a>
+            <div class="footer__info">
+                <a class="footer__logo" href="#">Web<span class="footer__logo--colored">Studio</span></a>
+                <a class="footer__adress" href="#">Kyiv, 26 Lesi Ukrainky Ave</a>
+                <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer__link" href="tel:++380961111111">+38 096 111 11 11</a>
+            </div>
+            <div class="footer__buttons">
+                <h3 class="footer__title">Приєднуйтесь</h3>
+                <ul class="footer__svg__list">
+                    <li class="footer__svg__item">
+                        <a class="footer__svg__link" href="">
+                            <svg class="footer__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="footer__svg__item">
+                        <a class="footer__svg__link" href="">
+                            <svg class="footer__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="footer__svg__item">
+                        <a class="footer__svg__link" href="">
+                            <svg class="footer__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="footer__svg__item">
+                        <a class="footer__svg__link" href="">
+                            <svg class="footer__svg">
+                                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__title">Підпишіться на розсилку</h3>
+            </div>
         </div>
     </footer>
 </body>
