@@ -54,6 +54,10 @@ body {
   letter-spacing: 0.28px;
 }
 
+.current {
+  color: var(--link-color);
+}
+
 .header__nav__link:hover,
 .header__nav__link:focus {
   color: var(--link-color);
@@ -142,10 +146,12 @@ body {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  
 }
 
 .hero__button:hover {
   background: #002b4e;
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -546,11 +552,13 @@ body {
 .team__svg__link:hover,
 .team__svg__link:focus {
   background-color: #2196f3;
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__svg__link:hover .team__svg,
 .team__svg__link:focus .team__svg {
   fill: white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__img {
@@ -599,11 +607,13 @@ body {
 .clients__link:hover,
 .clients__link:focus {
   outline: 1px solid #2196f3;
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover .clients__svg,
 .clients__link:focus .clients__svg {
   fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -696,6 +706,7 @@ body {
 .footer__svg__link:hover,
 .footer__svg__link:focus {
   background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio */
