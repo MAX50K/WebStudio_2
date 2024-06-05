@@ -27,7 +27,8 @@
             <a class="header__logo" href="./index.html"><span class="header__logo--colored">Web</span>Studio</a>
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="header__nav__item"><a class="header__nav__link current" href="./index.html">Studio</a></li>
+                    <li class="header__nav__item"><a class="header__nav__link current" href="./index.html">Studio</a>
+                    </li>
                     <li class="header__nav__item"><a class="header__nav__link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="header__nav__item"><a class="header__nav__link" href="#">Contacts</a></li>
@@ -55,7 +56,8 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title animate__animated animate__bounceIn animate__delay-0.8s">Effective solutions for your business</h1>
+                <h1 class="hero__title animate__animated animate__bounceIn animate__delay-0.8s">Effective solutions for
+                    your business</h1>
                 <button class="hero__button" data-modal-open type="button">Order a service</button>
 
 
@@ -310,7 +312,7 @@
                 <a class="footer__link" href="tel:++380961111111">+38 096 111 11 11</a>
             </div>
             <div class="footer__buttons">
-                <h3 class="footer__title">Приєднуйтесь</h3>
+                <h3 class="footer__title">Join us</h3>
                 <ul class="footer__svg__list">
                     <li class="footer__svg__item">
                         <a class="footer__svg__link" href="">
@@ -346,15 +348,22 @@
                     </li>
                 </ul>
             </div>
+            
             <div class="footer__form">
-                <h3 class="footer__title">Підпишіться на розсилку</h3>
+                <h3 class="footer__title">Subscribe to the newsletter</h3>
                 <label class="footer__label" for="email">
                     <input type="email" class="footer__input" placeholder="Email">
                 </label>
+                <div class="footer__send">
+                    <button class="footer__send__button">Subscribe</button>
+                    <svg class="footer__send__svg">
+                        <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </footer>
-    
+
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
