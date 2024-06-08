@@ -13,7 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -348,18 +348,21 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="footer__form">
                 <h3 class="footer__title">Subscribe to the newsletter</h3>
-                <label class="footer__label" for="email">
-                    <input type="email" class="footer__input" placeholder="Email">
-                </label>
-                <div class="footer__send">
-                    <button class="footer__send__button">Subscribe</button>
-                    <svg class="footer__send__svg">
-                        <use href="./images/icons/symbol-defs.svg#icon-send"></use>
-                    </svg>
-                </div>
+                <ul class="footer__form__list">
+                    <label class="footer__label" for="email">
+                        <input type="email" class="footer__input" placeholder="Email">
+                    </label>
+                    <button class="footer__send__button">
+                        Subscribe
+
+                        <svg class="footer__send__svg">
+                            <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </ul>
             </div>
         </div>
     </footer>

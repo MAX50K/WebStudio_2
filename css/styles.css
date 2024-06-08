@@ -52,6 +52,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -105,6 +106,7 @@ body {
   line-height: 16px;
   letter-spacing: 2%;
   text-align: left;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__contact__link:hover,
@@ -155,11 +157,12 @@ body {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover {
   background: #002b4e;
-  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -221,6 +224,7 @@ body {
   width: 18px;
   height: 18px;
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close__button__icon:hover,
@@ -264,6 +268,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
   box-sizing: border-box;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:hover,
@@ -282,7 +287,6 @@ body {
   top: 50%;
   width: 18px;
   height: 18px;
-  /* fill: black; */
   transform: translateY(-50%);
 }
 
@@ -326,6 +330,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input-confirmation:focus {
@@ -549,6 +554,8 @@ body {
   height: 44px;
   fill: #afb1b8;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__svg {
@@ -560,7 +567,6 @@ body {
 .team__svg__link:hover,
 .team__svg__link:focus {
   background-color: #2196f3;
-  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__svg__link:hover .team__svg,
@@ -604,6 +610,8 @@ body {
   outline: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__svg {
@@ -615,8 +623,6 @@ body {
 .clients__link:hover,
 .clients__link:focus {
   outline: 1px solid #2196f3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover .clients__svg,
@@ -686,8 +692,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 6%;
+  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -708,6 +713,8 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__svg {
@@ -719,12 +726,14 @@ body {
 .footer__svg__link:hover,
 .footer__svg__link:focus {
   background-color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .footer__form {
+.footer__form {
+}
+
+.footer__form__list {
   display: flex;
-} */
+}
 
 .footer__label {
 }
@@ -738,25 +747,30 @@ body {
   background-color: #2f303a;
   outline: 1px solid grey;
   border-radius: 4px;
-}
-
-.footer__send {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
 }
 
 .footer__send__button {
   color: #fff;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 187.5%;
   letter-spacing: 0.96px;
-  background-color: #2196f3;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.footer__send__item {
 }
 
 .footer__send__svg {
@@ -791,6 +805,8 @@ body {
   margin-bottom: 50px;
   margin-top: 94px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-buttons__button:hover,
@@ -799,7 +815,6 @@ body {
   background-color: #2196f3;
   box-shadow: 0 2px 2px 0 rgba(33, 8, 8, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects {
@@ -816,6 +831,7 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
   border: 1px solid rgb(238, 238, 238);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item:hover {
@@ -823,7 +839,6 @@ body {
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-img {
