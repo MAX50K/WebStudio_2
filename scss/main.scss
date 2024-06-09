@@ -1,5 +1,15 @@
 // BASE
 @import "./base/common";
+@import "./base/container";
 @import "./base/reset";
-
-
+// COMPONENTS
+@import "./components/footer";
+@import "./components/header";
+// ULTITS
+@import "./ulits/variables";
+// MAIN
+@import "./components/main/clients";
+@import "./components/main/hero";
+@import "./components/main/information";
+@import "./components/main/team";
+@import "./components/main/works"
