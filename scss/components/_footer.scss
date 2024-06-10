@@ -4,25 +4,25 @@
     padding-bottom: 60px;
   }
   
-  .footer .container {
+  & .container {
     display: flex;
     align-items: center;
   }
   
-  .footer__info {
+  &__info {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
   }
   
-  .footer__logo--colored {
+  &__logo--colored {
     color: white;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
   }
-  .footer__adress {
+  &__adress {
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -30,8 +30,8 @@
     letter-spacing: 0.42px;
     padding-bottom: 9px;
   }
-  .footer__link {
-    color: var(--text-color);
+  &__link {
+    color: $textColor;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -40,8 +40,8 @@
     margin-bottom: 9px;
   }
   
-  .footer__logo {
-    color: var(--link-color);
+  &__logo {
+    color: $linkColor;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
@@ -49,11 +49,11 @@
     padding-bottom: 20px;
   }
   
-  .footer__buttons {
+  &__buttons {
     margin-right: 93px;
   }
   
-  .footer__title {
+  &__title {
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 700;
@@ -62,15 +62,15 @@
     margin-bottom: 20px;
   }
   
-  .footer__svg__list {
+  &__svg__list {
     display: flex;
     gap: 10px;
   }
   
-  .footer__svg__item {
+  &__svg__item {
   }
   
-  .footer__svg__link {
+  &__svg__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,29 +80,29 @@
     border-radius: 50%;
   }
   
-  .footer__svg {
+  &__svg {
     width: 20px;
     height: 20px;
     fill: #fff;
   }
   
-  .footer__svg__link:hover,
-  .footer__svg__link:focus {
+  &__svg__link:hover,
+  &__svg__link:focus {
     background-color: #2196f3;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .footer__form {
+  &__form {
   }
   
-  .footer__form__list {
+  &__form__list {
     display: flex;
   }
   
-  .footer__label {
+  &__label {
   }
   
-  .footer__input {
+  &__input {
     padding-left: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -113,7 +113,7 @@
     border-radius: 4px;
   }
   
-  .footer__send__button {
+  &__send__button {
     color: #fff;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -133,10 +133,10 @@
     margin-left: 12px;
   }
   
-  .footer__send__item {
+  &__send__item {
   }
   
-  .footer__send__svg {
+  &__send__svg {
     width: 24px;
     height: 24px;
     fill: #fff;
