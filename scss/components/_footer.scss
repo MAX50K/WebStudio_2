@@ -1,20 +1,19 @@
 .footer {
-    background: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   & .container {
     display: flex;
     align-items: center;
   }
-  
+
   &__info {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
   }
-  
+
   &__logo--colored {
     color: white;
     font-family: "Raleway";
@@ -39,7 +38,7 @@
     text-align: left;
     margin-bottom: 9px;
   }
-  
+
   &__logo {
     color: $linkColor;
     font-family: "Raleway";
@@ -48,11 +47,11 @@
     letter-spacing: 1.08px;
     padding-bottom: 20px;
   }
-  
+
   &__buttons {
     margin-right: 93px;
   }
-  
+
   &__title {
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -61,15 +60,15 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-  
+
   &__svg__list {
     display: flex;
     gap: 10px;
   }
-  
+
   &__svg__item {
   }
-  
+
   &__svg__link {
     display: flex;
     justify-content: center;
@@ -79,29 +78,29 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
   }
-  
+
   &__svg {
     width: 20px;
     height: 20px;
     fill: #fff;
   }
-  
+
   &__svg__link:hover,
   &__svg__link:focus {
     background-color: #2196f3;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   &__form {
   }
-  
+
   &__form__list {
     display: flex;
   }
-  
+
   &__label {
   }
-  
+
   &__input {
     padding-left: 15px;
     padding-bottom: 15px;
@@ -112,7 +111,7 @@
     outline: 1px solid grey;
     border-radius: 4px;
   }
-  
+
   &__send__button {
     color: #fff;
     text-align: center;
@@ -132,12 +131,13 @@
     gap: 10px;
     margin-left: 12px;
   }
-  
+
   &__send__item {
   }
-  
+
   &__send__svg {
     width: 24px;
     height: 24px;
     fill: #fff;
   }
+}
