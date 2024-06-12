@@ -1,13 +1,11 @@
 .header {
-    padding: 25px 0;
-  }
-  
-  .header .container {
+
+  & .container {
     display: flex;
     align-items: center;
   }
-  
-  .header__logo {
+
+  &__logo {
     color: $titleColor;
     font-family: "Raleway";
     font-size: 26px;
@@ -15,31 +13,31 @@
     letter-spacing: 0.78px;
     margin-right: 93px;
   }
-  .header__logo--colored {
+  &__logo--colored {
     color: $linkColor;
   }
-  .header__nav {
+  &__nav {
     margin-right: 344px;
   }
-  .header__nav__list {
+  &__nav__list {
     display: flex;
     gap: 30px;
   }
-  .header__nav__item {
+  &__nav__item {
     padding-top: 20px;
   }
-  .header__nav__link {
+  &__nav__link {
     color: $titleColor;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
   }
-  
+
   .current {
     color: $linkColor;
     padding-bottom: 32px;
   }
-  
+
   .current:after {
     content: "";
     display: block;
@@ -47,13 +45,13 @@
     left: 0;
     bottom: 0;
   }
-  
-  .header__nav__link:hover,
-  .header__nav__link:focus {
+
+  &__nav__link:hover,
+  &__nav__link:focus {
     color: $linkColor;
   }
-  
-  .header__nav__link::after {
+
+  &__nav__link::after {
     content: "";
     display: block;
     width: 100%;
@@ -65,18 +63,18 @@
     transform-origin: center right;
     transition: transform $animation, transform-origin $animation;
   }
-  
-  .header__nav__link:hover::after {
+
+  &__nav__link:hover::after {
     transform: scale(1);
     transform-origin: center right;
   }
-  
-  .header__contact__list {
+
+  &__contact__list {
     display: flex;
     gap: 50px;
   }
-  
-  .header__contact__link {
+
+  &__contact__link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -87,12 +85,13 @@
     letter-spacing: 2%;
     text-align: left;
   }
-  
-  .header__contact__link:hover,
-  .header__contact__link:focus {
+
+  &__contact__link:hover,
+  &__contact__link:focus {
     color: $linkColor;
   }
-  
-  .header__contact__icon {
+
+  &__contact__icon {
     fill: currentColor;
   }
+}
