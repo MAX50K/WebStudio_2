@@ -5,8 +5,6 @@
     display: flex;
     gap: 30px;
   }
-  .information__item {
-  }
   
   .information__item::before {
     content: "";
@@ -43,7 +41,7 @@
   }
   
   .information__title {
-    color: var(--title-color);
+    color: $titleColor;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -51,7 +49,7 @@
     margin-bottom: 10px;
   }
   .information__text {
-    color: var(--text-color);
+    color: $textColor;
     width: 270px;
     font-size: 14px;
     font-weight: 400;

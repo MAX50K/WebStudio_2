@@ -22,9 +22,7 @@
 }
 
 .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   width: 172px;
   height: 92px;
   outline: 1px solid rgb(175, 177, 184);
