@@ -4,6 +4,28 @@
     padding: 0 15px;
 }
 
+.container.adaptive {
+    max-width: 480px;
+}
+
+@media screen and (min-width: 600px) {
+    .container.adaptive {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .container.adaptive {
+      max-width: 900px;
+    }
+  }
+  
+  @media screen and (min-width: 1140px) {
+    .container.adaptive {
+      max-width: 1140px;
+    }
+  }
+
 .section {
     margin-bottom: 94px;
 }
