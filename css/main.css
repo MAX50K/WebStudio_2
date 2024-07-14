@@ -9,16 +9,12 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid red;
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 .section {
   margin-bottom: 94px;
 }
@@ -333,21 +329,6 @@ img {
 }
 .hero__button:hover {
   background: #002b4e;
-}
-@media screen and (min-width: 480px) {
-  .hero .hero {
-    width: 100%;
-    height: 480px;
-  }
-  .hero .hero__title {
-    color: #fff;
-    text-align: center;
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 161.538%;
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
-  }
 }
 
 .information {
