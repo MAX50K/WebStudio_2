@@ -1,170 +1,240 @@
+// .header {
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+
+//   & .container {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   &__logo {
+//     color: $titleColor;
+//     font-family: "Raleway";
+//     font-size: 26px;
+//     font-weight: 700;
+//     letter-spacing: 0.78px;
+//     margin-right: 93px;
+//   }
+//   &__logo--colored {
+//     color: $linkColor;
+//   }
+//   &__nav {
+//     margin-right: 344px;
+//   }
+//   &__nav__list {
+//     display: flex;
+//     gap: 30px;
+//   }
+//   &__nav__item {
+//     padding-top: 20px;
+//   }
+//   &__nav__link {
+//     color: $titleColor;
+//     font-size: 14px;
+//     font-weight: 500;
+//     letter-spacing: 0.28px;
+//   }
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
 
   & .container {
-    display: flex;
-    align-items: center;
+    @extend %flex;
   }
 
   &__logo {
-    color: $titleColor;
-    font-family: "Raleway";
-    font-size: 26px;
+    color: $linkColor;
+    font-family: Raleway;
+    font-size: 24px;
     font-weight: 700;
-    letter-spacing: 0.78px;
-    margin-right: 93px;
+    letter-spacing: 0.72px;
   }
-  &__logo--colored {
-    color: $linkColor;
+
+  &__logo2 {
+    color: #000000;
   }
-  &__nav {
-    margin-right: 344px;
-  }
+
+  // &__nav {
+  //   display: none;
+  // }
+
   &__nav__list {
-    display: flex;
-    gap: 30px;
-  }
-  &__nav__item {
-    padding-top: 20px;
-  }
-  &__nav__link {
-    color: $titleColor;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+    // display: none;
   }
 
-  .current {
-    color: $linkColor;
-    padding-bottom: 32px;
+  &__list {
   }
 
-  .current:after {
-    content: "";
-    display: block;
-    padding: auto;
-    left: 0;
-    bottom: 0;
-  }
-
-  &__nav__link:hover,
-  &__nav__link:focus {
-    color: $linkColor;
-  }
-
-  &__nav__link::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $linkColor;
-    border-radius: 2px;
-    margin-top: 20px;
-    transform: scale(0);
-    transform-origin: center right;
-    transition: transform $animation, transform-origin $animation; 
-  }
-
-  &__nav__link:hover::after {
-    transform: scale(1);
-    transform-origin: center right;
+  &__item {
   }
 
   &__contact__list {
-    display: flex;
-    gap: 50px;
+    display: none;
   }
 
-  &__contact__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: $textColor;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 2%;
-    text-align: left;
+  &__contacts-item {
   }
 
-  &__contact__link:hover,
-  &__contact__link:focus {
-    color: $linkColor;
+
+
+
+  // .current {
+  //   color: $linkColor;
+  //   padding-bottom: 32px;
+  // }
+
+  // .current:after {
+  //   content: "";
+  //   display: block;
+  //   padding: auto;
+  //   left: 0;
+  //   bottom: 0;
+  // }
+
+  // &__nav__link:hover,
+  // &__nav__link:focus {
+  //   color: $linkColor;
+  // }
+
+  // &__nav__link::after {
+  //   content: "";
+  //   display: block;
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: $linkColor;
+  //   border-radius: 2px;
+  //   margin-top: 20px;
+  //   transform: scale(0);
+  //   transform-origin: center right;
+  //   transition: transform $animation, transform-origin $animation; 
+  // }
+
+  // &__nav__link:hover::after {
+  //   transform: scale(1);
+  //   transform-origin: center right;
+  // }
+
+  // &__contact__list {
+  //   display: flex;
+  //   gap: 50px;
+  // }
+
+  // &__contact__link {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 10px;
+  //   color: $textColor;
+  //   font-size: 14px;
+  //   font-weight: 500;
+  //   line-height: 16px;
+  //   letter-spacing: 2%;
+  //   text-align: left;
+  // }
+
+  // &__contact__link:hover,
+  // &__contact__link:focus {
+  //   color: $linkColor;
+  // }
+
+  // &__contact__icon {
+  //   fill: currentColor;
+  // }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 25px 0px 0px 0px;
+
+    &__link-nav {
+      display: flex;
+      color: #212121;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+    }
+
+    &__contacts-link:hover,
+    &__link-nav:hover {
+      color: $linkColor;
+    }
+
+    & .container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      color: $linkColor;
+      font-family: "Raleway";
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.72px;
+      margin-right: 88px;
+      padding-bottom: 25px;
+    }
+
+    &__logo2 {
+      color: #212121;
+      font-family: Raleway;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.72px;
+    }
+
+    &__nav {
+      display: flex;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+    }
+
+    &__nav-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__contacts {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__contacts-item {
+      display: flex;
+    }
+
+    &__contacts-link {
+      display: flex;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      align-items: center;
+      gap: 10px;
+      color: #757575;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+    }
+
+    &__contacts-svg {
+      fill: currentColor;
+    }
   }
 
-  &__contact__icon {
-    fill: currentColor;
+  .hover::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background: $linkColor;
+    margin-top: 28px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-  order: 1;
-  }
-  
-  label {
-  display: block;
-  height: 30px;
-  position: relative;
-  top: 15px;
-  }
-  
-  label span,
-  label span::before,
-  label span::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 2px;
-  background: #333;
-  position: absolute;
-  right: 0;
-  transition: 0.3s;
-  }
-  
-  label span::before {
-  top: -8px;
-  }
-  
-  label span::after {
-  top: 8px;
-  }
-  
-  .nav_menu {
-  display: none;
-  }
-  
-  input[type="checkbox"]:checked ~ .nav_menu {
-  display: flex;
-  flex-direction: column;
-  }
-  
-  .nav_menu  {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 12px 8px #ececec;
-  }
-  
-  .nav_menu li {
-  margin: 15px 0;
-  }
-  
-  input[type="checkbox"]:checked ~ label span {
-  transform: rotate(-45deg);
-  }
-  input[type="checkbox"]:checked ~ label span::before {
-  top: 0;
-  transform: rotate(0);
-  }
-  input[type="checkbox"]:checked ~ label span::after {
-  top: 0;
-  transform: rotate(90deg);
-  }
-  }
   
   

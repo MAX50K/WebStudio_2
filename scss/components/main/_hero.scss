@@ -15,6 +15,7 @@
   text-align: center;
 
   &__title {
+    @extend %flex;
     color: #fff;
     font-size: 44px;
     font-weight: 900;
