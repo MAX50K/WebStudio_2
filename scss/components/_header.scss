@@ -141,9 +141,9 @@
   // }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
-    padding: 25px 0px 0px 0px;
+    // padding: 25px 0px 0px 0px;
 
     &__link-nav {
       display: flex;
@@ -162,21 +162,21 @@
 
     & .container {
       display: flex;
-      align-items: center;
+      justify-content: space-between;
     }
 
     &__logo {
-      color: $linkColor;
+      color: $titleColor;
       font-family: "Raleway";
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 0.72px;
       margin-right: 88px;
-      padding-bottom: 25px;
+      // padding-bottom: 25px;
     }
 
-    &__logo2 {
-      color: #212121;
+    &__logo--colored {
+      color: $linkColor;
       font-family: Raleway;
       font-size: 24px;
       font-weight: 700;

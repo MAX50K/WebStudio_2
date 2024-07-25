@@ -1,16 +1,13 @@
 .container{
   width: 100%;  
   padding: 0 15px;
-  outline: solid red 1px;
+  // outline: solid red 1px;
 }
 
 
 @media screen and (min-width: 480px) {
   .container {
       width: 480px;
-      margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
   }
 }
 

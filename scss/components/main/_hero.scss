@@ -44,19 +44,19 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 400px;
-    width: 480px;
+// @media screen and (max-width: 480px) {
+//   .hero {
+//     height: 400px;
+//     width: 480px;
 
-    &__title {
-      font-size: 26px;
-      line-height: 42px;
-      letter-spacing: 1.56px;
-      width: 360px;
-    }
-  }
-}
+//     &__title {
+//       font-size: 26px;
+//       line-height: 42px;
+//       letter-spacing: 1.56px;
+//       width: 360px;
+//     }
+//   }
+// }
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -64,9 +64,7 @@
 
     &__title {
       font-size: 26px;
-      line-height: 42px;
       letter-spacing: 1.56px;
-      width: 360px;
     }
   }
 }
