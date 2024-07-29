@@ -54,12 +54,12 @@
     color: #000000;
   }
 
-  // &__nav {
-  //   display: none;
-  // }
+  &__nav {
+    display: none;
+  }
 
   &__nav__list {
-    // display: none;
+    display: none;
   }
 
   &__list {
@@ -234,6 +234,9 @@
     background: $linkColor;
     margin-top: 28px;
   }
+}
+
+@media screen and (max-width: 1200px){  
 }
 
   

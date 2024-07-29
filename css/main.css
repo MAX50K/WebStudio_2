@@ -201,6 +201,12 @@ img {
 .header__logo2 {
   color: #000000;
 }
+.header__nav {
+  display: none;
+}
+.header__nav__list {
+  display: none;
+}
 .header__contact__list {
   display: none;
 }
@@ -293,7 +299,14 @@ label {
   label {
     display: block;
     height: 30px;
+    width: 30px;
+    margin-left: auto;
     position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
     top: 15px;
   }
   label span,
@@ -326,8 +339,9 @@ label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
     background: #fff;
     box-shadow: 0 12px 8px #ececec;
