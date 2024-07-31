@@ -243,6 +243,10 @@
     background: $linkColor;
     margin-top: 28px;
   }
+
+  .mobile__menu{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {

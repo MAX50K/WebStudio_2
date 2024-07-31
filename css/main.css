@@ -308,9 +308,12 @@ img {
     background: #2196f3;
     margin-top: 28px;
   }
+  .mobile__menu {
+    display: none;
+  }
 }
-input[type=checkbox],
-label {
+.burger__input[type=checkbox],
+.burger__label {
   display: none;
 }
 
@@ -318,23 +321,23 @@ label {
   nav {
     order: 1;
   }
-  label {
+  .burger__label {
     display: block;
     height: 30px;
     width: 30px;
     margin-left: auto;
     position: relative;
   }
-  label:hover {
+  .burger__label:hover {
     cursor: pointer;
     color: #2196f3;
   }
-  label span {
+  .burger__label span {
     top: 15px;
   }
-  label span,
-  label span::before,
-  label span::after {
+  .burger__label span,
+  .burger__label span::before,
+  .burger__label span::after {
     content: "";
     display: block;
     width: 25px;
@@ -345,41 +348,52 @@ label {
     right: 0;
     transition: 0.3s;
   }
-  label span::before {
+  .burger__label span::before {
     top: -8px;
   }
-  label span::after {
+  .burger__label span::after {
     top: 8px;
   }
-  .header__nav__list {
+  .mobile__nav__list {
     display: none;
   }
-  input[type=checkbox]:checked ~ .header__nav__list {
+  .burger__input[type=checkbox]:checked ~ .mobile__nav__list {
     display: flex;
     flex-direction: column;
   }
-  .header__nav__list {
+  .mobile__menu {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    padding: 20px;
+    padding: 48px 40px;
     background: #fff;
     box-shadow: 0 12px 8px #ececec;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
   }
-  .header__nav__list li {
+  .mobile__nav__list li {
     margin: 15px 0;
   }
-  input[type=checkbox]:checked ~ label span {
+  .mobile__social-link {
+    color: #2196f3;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 122.222%;
+    letter-spacing: 0.36px;
+  }
+  .burger__input[type=checkbox]:checked ~ .burger__label span {
     transform: rotate(-45deg);
   }
-  input[type=checkbox]:checked ~ label span::before {
+  .burger__input[type=checkbox]:checked ~ .burger__label span::before {
     top: 0;
     transform: rotate(0);
   }
-  input[type=checkbox]:checked ~ label span::after {
+  .burger__input[type=checkbox]:checked ~ .burger__label span::after {
     top: 0;
     transform: rotate(90deg);
   }
