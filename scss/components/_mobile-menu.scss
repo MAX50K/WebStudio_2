@@ -71,7 +71,7 @@
     z-index: 6;
   }
 
-  .mobile__nav__link { 
+  .mobile__nav__link {
     text-align: center;
     font-family: Roboto;
     font-size: 40px;
@@ -81,18 +81,45 @@
     letter-spacing: 0.8px;
   }
 
+  .mobile__contact__list{
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
   .mobile__contact__tel-link {
+    color: #2196f3;
+    font-family: "Roboto";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
   }
 
   .mobile__contact__email-link {
+    width: 28px;
+    color: #757575;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
   }
 
   .mobile__social-list {
     display: flex;
-    
+    gap: 10px;
+    align-items: center;
+    margin-top: 64px;
   }
-  .mobile__social-item {
+
+  .mobile__social-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
   }
+
   .mobile__social-link {
     color: #2196f3;
     font-family: "Roboto";
