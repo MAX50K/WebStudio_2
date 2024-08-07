@@ -3,7 +3,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .burger__label {
     display: block;
     height: 30px;
@@ -30,7 +30,7 @@
     height: 2px;
     background: #333;
     position: absolute;
-    z-index: 5;
+    z-index: 10;
     right: 0;
     transition: 0.3s;
   }
@@ -43,57 +43,50 @@
     top: 8px;
   }
 
-  .burger__input[type="checkbox"]:checked ~ .mobile__nav__list {
-    display: flex;
-    flex-direction: column;
+  .burger__input[type="checkbox"]:checked ~ .mobile__menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
   }
 
   .mobile__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
     background: #fff;
-    box-shadow: 0 12px 8px #ececec;
-    // transform: translateX(70%);
+    transform: translateX(100%);
+    transition: transform $animation;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .mobile__nav__item {
-    width: 139px;
-    height: 48.286px;
-    font-size: 40px;
-    z-index: 6;
+  .mobile__nav__item:not(:last-child){
+    margin-bottom: 32px;
   }
 
   .mobile__nav__link {
-    text-align: center;
-    font-family: Roboto;
     font-size: 40px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.8px;
   }
 
   .mobile__contact__list{
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
+  }
+
+  .mobile__contact__item:not(:last-child){
+    margin-bottom: 32px;
   }
 
   .mobile__contact__tel-link {
     color: #2196f3;
-    font-family: "Roboto";
     font-size: 34px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.68px;
   }
 
