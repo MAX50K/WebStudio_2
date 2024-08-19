@@ -23,25 +23,70 @@
         <div class="container">
             <a class="header__logo" href="./index.html"><span class="header__logo--colored">Web</span>Studio</a>
             <nav class="header__nav">
+                <input class="burger__input" type="checkbox" id="toggle">
+                <label class="burger__label" for="toggle">
+                    <span class="toggle__btn"></span>
+                </label>
                 <ul class="header__nav__list">
-                    <li class="header__nav__item"><a class="header__nav__link" href="./index.html">Studio</a></li>
-                    <li class="header__nav__item"><a class="header__nav__link current"
-                            href="./portfolio.html">Portfolio</a>
+                    <li class="header__nav__item"><a class="header__nav__link current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="header__nav__item"><a class="header__nav__link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="header__nav__item"><a class="header__nav__link" href="#">Contacts</a></li>
                 </ul>
-            </nav>
+                <!-- mobile menu -->
+                <!-- <div class="mobile__menu">
+                    <nav class="mobile__nav">
+                        <ul class="mobile__nav__list">
+                            <li class="mobile__nav__item"><a class="mobile__nav__link current"
+                                    href="./index.html">Studio</a>
+                            </li>
+                            <li class="mobile__nav__item"><a class="mobile__nav__link"
+                                    href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="mobile__nav__item"><a class="mobile__nav__link" href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="mobile__contact__list">
+                            <li class="mobile__contact__item"><a class="mobile__contact__tel-link" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile__contact__item"><a class="mobile__contact__email-link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__social-list">
+                            <li class="mobile__social-item">
+                                <a class="mobile__social-link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile__social-item">
+                                <a class="mobile__social-link" href="">Twitter</a>
+                            </li>
+                            <li class="mobile__social-item">
+                                <a class="mobile__social-link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile__social-item">
+                                <a class="mobile__social-link" href="">LinkedIn</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
             <ul class="header__contact__list">
                 <li><a class="header__contact__link" href="mailto:info@devstudio.com">
                         <svg class="header__contact__icon" width="16" height="12">
                             <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>
-                        info@devstudio.com</a></li>
+                        info@devstudio.com</a>
+                </li>
                 <li><a class="header__contact__link" href="tel:+380961111111">
                         <svg class="header__contact__icon" width="10" height="16">
                             <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
-                        +38 096 111 11 11</a></li>
+                        +38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -68,7 +113,7 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="projects">
+        <section class="projects">
             <div class="container">
                 <ul class="projects__list">
                     <li class="projects__item">
@@ -200,11 +245,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
     </main>
     <!-- footers -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__info">
                 <a class="footer__logo" href="#">Web<span class="footer__logo--colored">Studio</span></a>
@@ -251,7 +296,7 @@
             </div>
             <div class="footer__form">
                 <h3 class="footer__title">Subscribe to the newsletter</h3>
-                <ul class="footer__form__list">
+                <form class="footer__form__list">
                     <label class="footer__label" for="email">
                         <input type="email" class="footer__input" placeholder="Email">
                     </label>
@@ -262,12 +307,12 @@
                             <use href="./images/icons/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
-                </ul>
+                </form>
             </div>
         </div>
     </footer>
     </div>
-    </footer> -->
+    </footer>
 </body>
 
 </html>

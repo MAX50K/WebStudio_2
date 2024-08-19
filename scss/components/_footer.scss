@@ -1,68 +1,69 @@
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 
   & .container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 
   &__info {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    margin-right: 70px;
+    margin-bottom: 60px;
+  }
+  
+  &__logo {
+    color: $linkColor;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    margin-bottom: 20px;
   }
 
   &__logo--colored {
     color: white;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
   }
+
   &__adress {
     color: white;
     font-size: 14px;
     font-weight: 400;
-    line-height: 171.429%;
+    line-height: 171%;
     letter-spacing: 0.42px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
   }
   &__link {
     color: $textColor;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 2%;
-    text-align: left;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    
+  }
+
+  &__link:not(:last-child){
     margin-bottom: 9px;
   }
 
-  &__logo {
-    color: $linkColor;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    padding-bottom: 20px;
-  }
-
   &__buttons {
-    margin-right: 93px;
+    margin-bottom: 60px;
   }
 
   &__title {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 20px;
   }
 
   &__svg__list {
-    display: flex;
+    @extend %flex;
     gap: 10px;
   }
 
@@ -93,7 +94,9 @@
   }
 
   &__form__list {
-    display: flex;
+    @extend %flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__label {
