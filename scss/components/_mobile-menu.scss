@@ -43,6 +43,18 @@
     top: 8px;
   }
 
+  .burger__input[type="checkbox"]:checked ~ .burger__label span {
+    transform: rotate(-45deg);
+  }
+  .burger__input[type="checkbox"]:checked ~ .burger__label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .burger__input[type="checkbox"]:checked ~ .burger__label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
   .burger__input[type="checkbox"]:checked ~ .mobile__menu {
     opacity: 1;
     visibility: visible;
@@ -125,15 +137,5 @@
     letter-spacing: 0.36px;
   }
 
-  .burger__input[type="checkbox"]:checked ~ .burger__label span {
-    transform: rotate(-45deg);
-  }
-  .burger__input[type="checkbox"]:checked ~ .burger__label span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  .burger__input[type="checkbox"]:checked ~ .burger__label span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
+  
 }

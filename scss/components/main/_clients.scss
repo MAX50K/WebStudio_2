@@ -10,18 +10,20 @@
   }
   
   &__list {
-    display: flex;
+    @extend %flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 94px;
     margin-top: 50px;
   }
   
   &__item {
+    
   }
   
   &__link {
     @extend %flex;
-    width: 172px;
+    width: 210px;
     height: 92px;
     outline: 1px solid rgb(175, 177, 184);
     border-radius: 4px;
@@ -50,7 +52,6 @@
 
 @media screen and (max-width: 480px){
   .clients__list{
-    flex-direction: column;
   }
 }
 
