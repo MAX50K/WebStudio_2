@@ -45,6 +45,7 @@
     }
 
     &__nav {
+      display: flex;
       color: $titleColor;
       font-size: 14px;
       font-weight: 500;
@@ -67,8 +68,13 @@
       color: $linkColor;
     }
 
+    &__contact__icon {
+      fill: #757575;
+    }
+    
     &__contact__list {
       display: block;
+      gap: 10px;  
     }
 
     &__contact__link {
@@ -100,11 +106,6 @@
       bottom: 0;
     }
 
-    
-
-    &__contacts__svg {
-      fill: currentColor;
-    }
 
     &__nav__item {
       padding-top: 20px;
