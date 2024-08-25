@@ -191,8 +191,16 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo--colored {
+.header__logo {
   color: #2196f3;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.header__logo--colored {
+  color: #000000;
 }
 .header__nav__list {
   display: none;
@@ -272,7 +280,7 @@ img {
     fill: #757575;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
