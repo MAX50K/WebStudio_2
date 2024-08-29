@@ -151,15 +151,17 @@
     text-align: center;
   
     & .container {
-      // display: flex;
-      // flex-wrap: wrap;
-      // align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
   
     &__info {
       @extend %flex;
       flex-direction: column;
       margin-bottom: 60px;
+      margin-right: 165px;
     }
     
     &__logo {
@@ -220,6 +222,151 @@
   
     &__svg__link {
       @extend %flex;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+  
+    &__svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+  
+    &__svg__link:hover,
+    &__svg__link:focus {
+      background-color: #2196f3;
+      transition: background-color $animation;
+    }
+  
+    &__form {
+    }
+  
+    &__form__list {
+      @extend %flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    &__label {
+    }
+  
+    &__input {
+      color: white;
+      padding-left: 15px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      width: 358px;
+      height: 50px;
+      background-color: #2f303a;
+      outline: 1px solid grey;
+      border-radius: 4px;
+    }
+  
+    &__send__button {
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 187.5%;
+      letter-spacing: 0.96px;
+      border-radius: 4px;
+      background: #2196f3;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      width: 200px;
+      @extend %flex;
+      padding: 10px 28px;
+      gap: 10px;
+      margin-left: 12px;
+    }
+  
+    &__send__item {
+    }
+  
+    &__send__svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  
+    & .container {
+      display: flex;
+    }
+  
+    &__info {
+      margin-right: 70px;
+    }
+    
+    &__logo {
+      color: $linkColor;
+      font-family: "Raleway";
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.72px;
+      margin-bottom: 20px;
+    }
+  
+    &__logo--colored {
+      color: white;
+    }
+  
+    &__adress {
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 171%;
+      letter-spacing: 0.42px;
+      margin-bottom: 9px;
+    }
+    &__link {
+      color: $textColor;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+      
+    }
+  
+    &__link:not(:last-child){
+      margin-bottom: 9px;
+    }
+  
+    &__buttons {
+      
+    }
+  
+    &__title {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    &__svg__list {
+      gap: 10px;
+    }
+  
+    &__svg__item {
+    }
+  
+    &__svg__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 44px;
       height: 44px;
       background: rgba(255, 255, 255, 0.1);

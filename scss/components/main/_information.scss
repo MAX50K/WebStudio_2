@@ -1,20 +1,83 @@
 .information {
+  margin-top: 94px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    border-radius: 4px;
+    background: #f5f4fa;
+    width: 450px;
+    height: 120px;
+    text-align: center;
+  }
+
+  &__item:nth-child(1):before {
+    background-image: url("../images/icons/antena.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  &__item:nth-child(2):before {
+    background-image: url("../images/icons/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  &__item:nth-child(3):before {
+    background-image: url("../images/icons/diagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  &__item:nth-child(4):before {
+    background-image: url("../images/icons/astronaut.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $titleColor;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: $textColor;
+    // width: 270px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .information {
     margin-top: 94px;
 
     &__list {
-      display: flex;
-      gap: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    
+
     &__item::before {
       content: "";
       display: block;
       border-radius: 4px;
       background: #f5f4fa;
-      width: 270px;
+      width: 354px;
       height: 120px;
     }
-    
+
     &__item:nth-child(1):before {
       background-image: url("../images/icons/antena.svg");
       background-repeat: no-repeat;
@@ -39,37 +102,12 @@
       background-position: center;
       margin-bottom: 30px;
     }
-    
+
     &__title {
-      color: $titleColor;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.42px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+      
     }
     &__text {
-      color: $textColor;
-      // width: 270px;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 171.429%;
-      letter-spacing: 0.42px;
+      width: 354px;
     }
   }
-
-@media screen and (max-width: 480px){
-  .information__list{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .information__item::before{
-    width: 450px;
-  }
-
-  .information__title{
-    text-align: center;
-  }
 }
-  
