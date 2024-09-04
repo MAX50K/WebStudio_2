@@ -435,8 +435,6 @@ img {
   }
 }
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 .header .container {
@@ -465,10 +463,6 @@ img {
   .mobile__menu {
     display: none;
   }
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
   .header .container {
     display: flex;
     align-items: center;
@@ -483,6 +477,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.28px;
     margin-right: 96px;
+    margin-top: 30px;
   }
   .header__nav__list {
     display: flex;

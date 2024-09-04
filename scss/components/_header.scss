@@ -1,6 +1,6 @@
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 
   & .container {
@@ -36,8 +36,8 @@
   }
 
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
 
     & .container {
       display: flex;
@@ -54,12 +54,12 @@
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.28px;
-      margin-right: 96px;
+      margin-right: 96px; 
+      margin-top: 30px; 
     }
 
     &__nav__list {
       display: flex;
-      // align-items: center;
       gap: 50px;
     }
 
@@ -157,10 +157,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    &__logo {
-      // margin-right: 93px;
     }
 
     &__nav {
