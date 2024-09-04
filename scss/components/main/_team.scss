@@ -13,7 +13,9 @@
     }
     
     &__list {
-      @extend %flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       gap: 30px;
     }
@@ -43,7 +45,9 @@
     }
     
     &__svg__list {
-      @extend %flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 10px;
       margin-right: 44px;
       margin-left: 44px;
@@ -54,7 +58,9 @@
     }
     
     &__svg__link {
-      @extend %flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 44px;
       height: 44px;
       fill: #afb1b8;
@@ -122,7 +128,9 @@
     }
     
     &__svg__list {
-      @extend %flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 10px;
       margin-right: 44px;
       margin-left: 44px;
@@ -133,7 +141,9 @@
     }
     
     &__svg__link {
-      @extend %flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 44px;
       height: 44px;
       fill: #afb1b8;
@@ -160,3 +170,93 @@
     }
   }
 }
+
+@media screen and (min-width: 768px){
+  .team {
+    background: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__subtitle {
+      color: $titleColor;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1.08px;
+      margin-bottom: 50px;
+    }
+    
+    &__list {
+      flex-wrap: wrap;
+    }
+    
+    &__item {
+      width: 354px;
+    }
+    &__name {
+      color: $titleColor;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.48px;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+    &__text {
+      text-align: center;
+      font-size: 16px;
+      color: $textColor;
+      margin-bottom: 30px;
+      letter-spacing: 0.48px;
+    }
+    
+    &__svg__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-right: 44px;
+      margin-left: 44px;
+      margin-bottom: 42px;
+    }
+    
+    &__svg__item {
+    }
+    
+    &__svg__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      fill: #afb1b8;
+      border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__svg {
+      width: 20px;
+      height: 20px;
+      fill: #afb1b8;
+    }
+    
+    &__svg__link:hover,
+    &__svg__link:focus {
+      background-color: #2196f3;
+    }
+    
+    &__svg__link:hover &__svg,
+    &__svg__link:focus &__svg {
+      fill: white;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+    &__item {
+      width: 270px;
+    }
+  }
