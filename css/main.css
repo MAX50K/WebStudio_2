@@ -358,6 +358,9 @@ img {
   .footer__link:not(:last-child) {
     margin-bottom: 9px;
   }
+  .footer__buttons {
+    margin-right: 93px;
+  }
   .footer__title {
     color: #fff;
     font-size: 14px;
@@ -475,7 +478,6 @@ img {
     margin-right: 88px;
   }
   .header__nav {
-    display: flex;
     color: #000;
     font-size: 14px;
     font-weight: 500;
@@ -484,7 +486,6 @@ img {
   }
   .header__nav__list {
     display: flex;
-    align-items: center;
     gap: 50px;
   }
   .header__nav__link {
@@ -550,8 +551,10 @@ img {
     padding-top: 21px;
     padding-bottom: 21px;
   }
-  .header__logo {
-    margin-right: 215px;
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header__nav {
     display: flex;
@@ -559,10 +562,11 @@ img {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    margin-right: 315px;
   }
   .header__nav__list {
     gap: 53px;
+    display: flex;
+    justify-content: center;
   }
   .header__nav__link {
     position: relative;
@@ -571,15 +575,16 @@ img {
   .header__nav__link:hover, .header__nav__link:focus {
     color: #2196f3;
   }
-  .header .header__contact__item {
+  .header__contact__item {
     margin-bottom: 9px;
   }
   .header__contact__icon {
     fill: #757575;
   }
   .header__contact__list {
-    display: block;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
   .header__contact__link {
     display: flex;
@@ -591,7 +596,7 @@ img {
     letter-spacing: 0.24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__contact__link:hover, .header__contact__link:focus {
+  .header__contact__link .header__contact__icon:hover, .header__contact__link .header__contact__icon:focus {
     color: #2196f3;
   }
   .header .current {
@@ -776,7 +781,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  width: 170px;
   height: 92px;
   outline: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
@@ -1201,71 +1206,8 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team {
-    background: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .team__subtitle {
-    color: #000;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-  }
-  .team__list {
-    flex-wrap: wrap;
-  }
   .team__item {
     width: 270px;
-  }
-  .team__name {
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
-  .team__text {
-    text-align: center;
-    font-size: 16px;
-    color: #757575;
-    margin-bottom: 30px;
-    letter-spacing: 0.48px;
-  }
-  .team__svg__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-right: 44px;
-    margin-left: 44px;
-    margin-bottom: 42px;
-  }
-  .team__svg__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    fill: #afb1b8;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .team__svg {
-    width: 20px;
-    height: 20px;
-    fill: #afb1b8;
-  }
-  .team__svg__link:hover, .team__svg__link:focus {
-    background-color: #2196f3;
-  }
-  .team__svg__link:hover .team__svg, .team__svg__link:focus .team__svg {
-    fill: white;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .works {
