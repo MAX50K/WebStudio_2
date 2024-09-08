@@ -8,7 +8,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/Img.jpg");
+    url("../images/Img-people.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,13 +60,13 @@
 //   }
 // }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 400px;
+// @media screen and (max-width: 768px) {
+//   .hero {
+//     height: 400px;
 
-    &__title {
-      font-size: 26px;
-      letter-spacing: 1.56px;
-    }
-  }
-}
+//     &__title {
+//       font-size: 26px;
+//       letter-spacing: 1.56px;
+//     }
+//   }
+// }

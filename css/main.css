@@ -801,7 +801,7 @@ img {
   font-weight: 400px;
   height: 600px;
   align-items: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-people.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -835,15 +835,6 @@ img {
   background: #002b4e;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  .hero__title {
-    font-size: 26px;
-    letter-spacing: 1.56px;
-  }
-}
 .information {
   margin-top: 94px;
 }
