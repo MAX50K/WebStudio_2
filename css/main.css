@@ -611,6 +611,7 @@ img {
   margin-bottom: 30px;
 }
 .information__title {
+  text-align: center;
   color: #000;
   font-size: 14px;
   font-weight: 700;
