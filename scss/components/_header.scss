@@ -1,6 +1,6 @@
 .header {
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 
   & .container {
@@ -36,8 +36,8 @@
   }
 
   .header {
-    // padding-top: 21px;
-    // padding-bottom: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 
     & .container {
       display: flex;
@@ -54,7 +54,8 @@
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.28px;
-      margin-right: 96px; 
+      margin-right: 96px;
+      margin-top: 27px;
     }
 
     &__nav__list {
@@ -160,92 +161,26 @@
 
     &__nav {
       display: flex;
-      color: $titleColor;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.28px;
-      // margin-right: 344px;
+      margin-top: 0px;
     }
 
     &__nav__list {
       gap: 53px;
-      display: flex;
       justify-content: center;
     }
 
-    &__nav__link {
-      position: relative;
-      transition: color $animation;
-    }
-
-    &__nav__link:hover,
-    &__nav__link:focus {
-      color: $linkColor;
-    }
 
     &__contact__item {
       margin-bottom: 9px;
     }
-
-    &__contact__icon {
-      fill: #757575;
-    }
-
+    
     &__contact__list {
       display: flex;
       flex-direction: row;
       gap: 30px;
     }
-
-    &__contact__link {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #757575;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.24px;
-      transition: color $animation;
-    }
-
-    &__contact__link &__contact__icon:hover,
-    &__contact__link &__contact__icon:focus {
-      color: $linkColor;
-    }
-
-    .current {
-      color: $linkColor;
-      padding-bottom: 32px;
-    }
-
-    .current:after {
-      content: "";
-      display: block;
-      padding: auto;
-      left: 0;
-      bottom: 0;
-    }
-
     &__nav__item {
       padding-top: 20px;
-    }
-
-    &__nav__link::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: $linkColor;
-      border-radius: 2px;
-      margin-top: 20px;
-      transform: scale(0);
-      transform-origin: center right;
-      transition: transform $animation, transform-origin $animation;
-    }
-
-    &__nav__link:hover::after {
-      transform: scale(1);
-      transform-origin: center right;
     }
   }
 
