@@ -1,5 +1,6 @@
 .information {
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__list {
     display: flex;
@@ -63,7 +64,6 @@
 
 @media screen and (min-width: 768px) {
   .information {
-    margin-top: 94px;
 
     &__list {
       flex-direction: row;
@@ -115,7 +115,6 @@
 
 @media screen and (min-width: 1200px) {
   .information {
-    margin-top: 94px;
 
     &__list {
       display: flex;

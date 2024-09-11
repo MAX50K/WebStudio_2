@@ -1,4 +1,6 @@
 .projects {
+  padding-bottom: 60px;
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -91,8 +93,12 @@
       overflow: hidden;
     }
 
-    &__overlay__text {
+    &__overlay{
       padding: 49px 24px;
+
+    }
+
+    &__overlay__text {
       color: #fff;
       font-size: 18px;
       font-weight: 400;

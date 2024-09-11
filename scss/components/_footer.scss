@@ -158,7 +158,6 @@
     & .container {
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
     }
 
@@ -170,7 +169,6 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    text-align: center;
 
     &__info {
       margin-right: 70px;
@@ -179,5 +177,14 @@
     &__buttons {
       margin-right: 93px;
     }
+
+    &__form__list {
+      flex-direction: row;
+    }
+
+    &__title {
+      text-align: start;
+    }
+
   }
 }

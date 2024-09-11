@@ -21,7 +21,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 100%;
-    align-items: center;
   }
   .section {
     margin-bottom: 94px;
@@ -198,7 +197,6 @@ img {
   .footer .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
   }
   .footer__info {
@@ -206,14 +204,17 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
-    text-align: center;
-  }
   .footer__info {
     margin-right: 70px;
   }
   .footer__buttons {
     margin-right: 93px;
+  }
+  .footer__form__list {
+    flex-direction: row;
+  }
+  .footer__title {
+    text-align: start;
   }
 }
 .header {
@@ -570,7 +571,8 @@ img {
 }
 
 .information {
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .information__list {
   display: flex;
@@ -628,9 +630,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .information {
-    margin-top: 94px;
-  }
   .information__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -672,9 +671,6 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .information {
-    margin-top: 94px;
-  }
   .information__list {
     display: flex;
     justify-content: center;
@@ -951,7 +947,6 @@ img {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin-top: 109px;
     margin-bottom: 50px;
   }
   .works__list {
@@ -1210,6 +1205,9 @@ img {
     margin-bottom: 50px;
   }
 }
+.projects {
+  padding-bottom: 60px;
+}
 .projects__list {
   display: flex;
   flex-direction: column;
@@ -1284,8 +1282,10 @@ img {
     position: relative;
     overflow: hidden;
   }
-  .projects__overlay__text {
+  .projects__overlay {
     padding: 49px 24px;
+  }
+  .projects__overlay__text {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
